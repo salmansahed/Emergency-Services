@@ -1,0 +1,74 @@
+[
+  {
+    "id": 1,
+    "name": "জাতীয় জরুরি সেবা",
+    "name_en": "National Emergency",
+    "number": "999",
+    "category": "জরুরি",
+    "icon": "https://img.icons8.com/color/96/siren.png"
+  },
+  {
+    "id": 2,
+    "name": "পুলিশ",
+    "name_en": "Police",
+    "number": "999",
+    "category": "পুলিশ",
+    "icon": "https://img.icons8.com/color/96/police-badge.png"
+  },
+  {
+    "id": 3,
+    "name": "ফায়ার সার্ভিস",
+    "name_en": "Fire Service",
+    "number": "999",
+    "category": "ফায়ার",
+    "icon": "https://img.icons8.com/color/96/fire-truck.png"
+  },
+  {
+    "id": 4,
+    "name": "অ্যাম্বুলেন্স",
+    "name_en": "Ambulance",
+    "number": "1994-999999",
+    "category": "স্বাস্থ্য",
+    "icon": "https://img.icons8.com/color/96/ambulance.png"
+  },
+  {
+    "id": 5,
+    "name": "নারী ও শিশু সহায়তা",
+    "name_en": "Women & Child Helpline",
+    "number": "109",
+    "category": "সহায়তা",
+    "icon": "https://img.icons8.com/color/96/helping-hand.png"
+  },
+  {
+    "id": 6,
+    "name": "দুদক",
+    "name_en": "Anti-Corruption",
+    "number": "106",
+    "category": "সরকারি",
+    "icon": "https://img.icons8.com/color/96/law.png"
+  },
+  {
+    "id": 7,
+    "name": "বিদ্যুৎ বিভ্রাট",
+    "name_en": "Electricity Outage",
+    "number": "16216",
+    "category": "বিদ্যুৎ",
+    "icon": "https://img.icons8.com/color/96/electrical.png"
+  },
+  {
+    "id": 8,
+    "name": "ব্র্যাক",
+    "name_en": "Brac",
+    "number": "16445",
+    "category": "এনজিও",
+    "icon": "https://img.icons8.com/color/96/charity.png"
+  },
+  {
+    "id": 9,
+    "name": "বাংলাদেশ রেলওয়ে",
+    "name_en": "Bangladesh Railway",
+    "number": "163",
+    "category": "পরিবহন",
+    "icon": "https://img.icons8.com/color/96/train.png"
+  }
+]
