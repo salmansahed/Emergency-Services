@@ -21,7 +21,7 @@ const SingleEmergencyInfoCard = ({infoCard}) => {
           {heart ? (
             <i class="fa-regular fa-heart"></i>
           ) : (
-            <i class="fa-solid fa-heart"></i>
+            <i class="fa-solid fa-heart text-red-500"></i>
           )}
         </div>
         <img
