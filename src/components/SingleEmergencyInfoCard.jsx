@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 
-const SingleEmergencyInfoCard = ({ infoCard, setCopyCount, copyCount, favourite, setFavourite}) => {
+const SingleEmergencyInfoCard = ({ infoCard, setCopyCount, copyCount, favourite, setFavourite, setCalledName}) => {
   const { name, name_en, number, category, icon } = infoCard;
   let [heart, setHeart] = useState(true);
   const loverHeart = () => {
@@ -17,15 +17,21 @@ const SingleEmergencyInfoCard = ({ infoCard, setCopyCount, copyCount, favourite,
   };
 
   const callNumber = () => {
+    const newEntry = {
+      name: name,
+      number: number,
+      date: new Date().toLocaleString()
+    };
+    setCalledName((prev)=> [newEntry, ...prev])
     window.location.href = `tel:${number}`;
   };
   return (
     <div className="bg-white shadow-[0_35px_1000px_-15px_rgba(0,0,0,0.3)] rounded p-6 relative">
       <div className="absolute right-6 text-2xl" onClick={loverHeart}>
         {heart ? (
-          <i class="fa-regular fa-heart"></i>
+          <i className="fa-regular fa-heart"></i>
         ) : (
-          <i class="fa-solid fa-heart text-red-500"></i>
+          <i className="fa-solid fa-heart text-red-500"></i>
         )}
       </div>
       <img
@@ -48,13 +54,13 @@ const SingleEmergencyInfoCard = ({ infoCard, setCopyCount, copyCount, favourite,
           onClick={() => copyNumber()}
           className="border w-full rounded cursor-pointer select-none py-1 text-[#5C5C5C] border-[#5C5C5C] bg-gray-100 shadow hover:rounded-full"
         >
-          <i class="fa-solid fa-copy"></i> Copy
+          <i className="fa-solid fa-copy"></i> Copy
         </button>
         <button
           onClick={() => callNumber()}
           className="border w-full rounded cursor-pointer select-none py-1 bg-green-600 border-none shadow text-white hover:rounded-full"
         >
-          <i class="fa-solid fa-phone"></i> Call
+          <i className="fa-solid fa-phone"></i> Call
         </button>
       </div>
     </div>

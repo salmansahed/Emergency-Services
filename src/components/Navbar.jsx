@@ -2,7 +2,6 @@ import React from 'react';
 import Logo from '../assets/image/Logo.png'
 
 const Navbar = ({copyCount, favourite}) => {
-    // const [copyCount , setCopyCount] = useState(0);
     return (
       <div className="flex justify-between w-11/12 mx-auto items-center py-4">
         <div>
@@ -10,7 +9,7 @@ const Navbar = ({copyCount, favourite}) => {
         </div>
         <div className="flex items-center gap-6">
           <p className="border px-4 py-1 rounded-full border-green-400 bg-green-200 select-none">
-            {favourite} <i class="fa-solid fa-heart text-red-500" />
+            {favourite} <i className="fa-solid fa-heart text-red-500" />
           </p>
           <button className="bg-green-600 text-white px-4 py-1 rounded-full">
             {copyCount} Copy
