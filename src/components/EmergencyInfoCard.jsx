@@ -1,7 +1,7 @@
 import React, { use } from 'react';
 import SingleEmergencyInfoCard from './SingleEmergencyInfoCard';
 
-const EmergencyInfoCard = ({emergencyInfoPromise}) => {
+const EmergencyInfoCard = ({emergencyInfoPromise, setCopyCount, copyCount, favourite, setFavourite}) => {
     const emergencyInfoData = use(emergencyInfoPromise)
     console.log(emergencyInfoData);
     return (
@@ -11,13 +11,21 @@ const EmergencyInfoCard = ({emergencyInfoPromise}) => {
             <SingleEmergencyInfoCard
               key={infoCard.id}
               infoCard={infoCard}
+              copyCount={copyCount}
+              setCopyCount={setCopyCount}
+              favourite={favourite}
+              setFavourite={setFavourite}
             ></SingleEmergencyInfoCard>
           ))}
         </div>
         <div className="bg-green-300 w-full md:w-[45%] lg:w-[35%] xl:w-[25%] rounded shadow-md shadow-black/20">
-          <div className='flex justify-between items-center px-5 my-4'>
-            <p className='font-semibold'><i class="fa-regular fa-clock"></i> Call History</p>
-            <button className='bg-blue-600 text-white px-6 cursor-grab py-1.5 rounded-full shadow-lg hover:rounded select-none'><i class="fa-solid fa-eraser"></i> Clear</button>
+          <div className="flex justify-between items-center px-5 my-4">
+            <p className="font-semibold">
+              <i class="fa-regular fa-clock"></i> Call History
+            </p>
+            <button className="bg-blue-600 text-white px-6 cursor-grab py-1.5 rounded-full shadow-lg hover:rounded select-none">
+              <i class="fa-solid fa-eraser"></i> Clear
+            </button>
           </div>
         </div>
       </div>
