@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { toast } from 'react-toastify';
 
 const SingleEmergencyInfoCard = ({ infoCard, setCopyCount, copyCount, favourite, setFavourite, setCalledName}) => {
   const { name, name_en, number, category, icon } = infoCard;
@@ -12,7 +13,9 @@ const SingleEmergencyInfoCard = ({ infoCard, setCopyCount, copyCount, favourite,
 
   const copyNumber = () => {
     navigator.clipboard.writeText(number);
-    alert(`Number Copied: ${number}`);
+    toast.success(`Number Copied: ${number}`, {
+      position: "top-center",
+    });
     setCopyCount(copyCount + 1)
   };
 

@@ -3,6 +3,7 @@ import './App.css'
 import EmergencyInfoCard from './components/EmergencyInfoCard'
 import HeroBanner from './components/HeroBanner';
 import Navbar from './components/Navbar';
+import { ToastContainer } from 'react-toastify';
 
 const emergencyInfoPromise = fetch("EmergencyInfo.json").then(res => res.json());
 
@@ -12,6 +13,7 @@ function App() {
 
   return (
     <>
+      <ToastContainer/>
       <Navbar copyCount={copyCount} favourite={favourite}></Navbar>
       <HeroBanner></HeroBanner>
       <EmergencyInfoCard
