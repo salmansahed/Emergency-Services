@@ -2,6 +2,10 @@
 
 A modern, responsive web application designed to provide quick access to essential emergency service numbers in Bangladesh. Users can easily find, copy, and dial emergency contacts directly from the dashboard.
 
+## 🌐 Live Link
+
+🔗 https://gov-emergency-services.netlify.app/
+
 ## ✨ Features
 
 - **Emergency Contact Cards:** Dedicated cards for each service with icons, names, and numbers.
