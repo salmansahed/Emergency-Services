@@ -31,4 +31,27 @@ To run this project locally, follow these steps:
 
 1. **Clone the repository:**
    ```bash
-   git clone [https://github.com/your-username/emergency-services-directory.git](https://github.com/your-username/emergency-services-directory.git)
+   git clone https://github.com/salmansahed/Emergency-Services.git
+   ```
+2.  **Navigate to the Directory:**
+    ```bash
+    cd Emergency-Services
+    ```
+3.  **Install Dependencies:**
+    ```bash
+    npm install
+    ```
+4.  **Start Development Server:**
+    ```bash
+    npm run dev
+    ```
+5.  **Open in Browser:** Visit `http://localhost:3000`
+
+---
+
+### 🤝 Contributing
+Contributions, issues, and feature requests are welcome! Feel free to check the issues page.
+
+---
+
+**Designed and Developed by [Salman Sahed](https://github.com/salmansahed)**
